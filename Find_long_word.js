@@ -1,9 +1,10 @@
 function findLongestWord(mySentence) {
-    singleWord = "";
-    longestWord = "";
-    wordStorage = [];
+   let  singleWord = "";
+   let longestWord = "";
+   let  wordStorage = [];
 
     for (let i = 0; i <= mySentence.length; i++) {
+        
         if (mySentence[i] === " " || i === mySentence.length) {
             if (singleWord.length > longestWord.length) {
                 longestWord = singleWord;
